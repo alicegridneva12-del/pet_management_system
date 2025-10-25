@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36" version="25.0.3">
+  <diagram name="Страница — 1" id="DYY1_uAuvkKsllohWyyg">
+    <mxGraphModel dx="1290" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-2" value="PetManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="50" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-3" value="+ _init: List[Pet]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="BiT_BTS1pdzeg8HbagfT-2">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="BiT_BTS1pdzeg8HbagfT-2">
+          <mxGeometry y="52" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-5" value="+add_pet(pet: Pet)&lt;div&gt;+remove_pet(name:str)&lt;/div&gt;&lt;div&gt;+find_pet(name: str) -&amp;gt; Pet&lt;/div&gt;&lt;div&gt;+list_pets[Pet]&lt;/div&gt;&lt;div&gt;+save_to_json(filename: str)&lt;/div&gt;&lt;div&gt;+load_from_json(filename: str)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="BiT_BTS1pdzeg8HbagfT-2">
+          <mxGeometry y="60" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-10" value="Pet" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="50" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-11" value="+ name: str&lt;div&gt;+species: str&lt;/div&gt;&lt;div&gt;+age: int&lt;/div&gt;&lt;div&gt;+owner: str&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="BiT_BTS1pdzeg8HbagfT-10">
+          <mxGeometry y="26" width="310" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="BiT_BTS1pdzeg8HbagfT-10">
+          <mxGeometry y="100" width="310" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-13" value="+_str_():str&lt;div&gt;+to_dict(self)&lt;/div&gt;&lt;div&gt;+from_dict(data: Dict)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="BiT_BTS1pdzeg8HbagfT-10">
+          <mxGeometry y="108" width="310" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.003;entryY=-0.028;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="BiT_BTS1pdzeg8HbagfT-5" target="BiT_BTS1pdzeg8HbagfT-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BiT_BTS1pdzeg8HbagfT-15" target="BiT_BTS1pdzeg8HbagfT-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="240" />
+              <mxPoint x="195" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-15" value="PetNotFoundError" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="75" y="300" width="240" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-16" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;exception" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="BiT_BTS1pdzeg8HbagfT-15">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-22" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;shape=link;" edge="1" parent="1" source="BiT_BTS1pdzeg8HbagfT-20" target="BiT_BTS1pdzeg8HbagfT-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-20" value="PetNotFoundError" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="20" y="420" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;" edge="1" parent="1" source="BiT_BTS1pdzeg8HbagfT-21" target="BiT_BTS1pdzeg8HbagfT-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-21" value="InvalidAgeError" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="230" y="420" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-25" value="DuplicatePetError" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="570" y="340" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BiT_BTS1pdzeg8HbagfT-29" value="exception" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.517;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;shape=link;" edge="1" parent="1" source="BiT_BTS1pdzeg8HbagfT-13" target="BiT_BTS1pdzeg8HbagfT-25">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="460" y="340" as="sourcePoint" />
+            <mxPoint x="540" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
